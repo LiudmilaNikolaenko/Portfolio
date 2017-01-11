@@ -1,0 +1,25 @@
+{
+  "name": "homework19-20",
+  "version": "1.0.0",
+  "description": "TechSkills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LiudmilaNikolaenko/homework19-20.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/LiudmilaNikolaenko/homework19-20/issues"
+  },
+  "homepage": "https://github.com/LiudmilaNikolaenko/homework19-20#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-sass": "^1.2.1"
+  }
+}

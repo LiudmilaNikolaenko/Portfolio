@@ -1,0 +1,13 @@
+<svg viewBox="27 3 61 50">
+	<path fill="none" stroke="#cfcfcf" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" d="M29,5v34.501c0,1.1,0.621,2.499,1.721,2.499h53.749c1.1,0,1.53-1.399,1.53-2.499V5"/>
+	<path fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" d="M85.5,51v-3c0-1.1-0.93-1.5-2.029-1.5h-52.75c-1.1,0-2.221,0.4-2.221,1.5v3"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="86" y1="10" x2="29" y2="10"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="86" y1="33" x2="29" y2="33"/>
+	<line fill="none" stroke="#cfcfcf" stroke-linecap="square" stroke-miterlimit="10" x1="86" y1="35.5" x2="29" y2="35.5"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="37" y1="11" x2="37" y2="31"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="45" y1="11" x2="45" y2="31"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="53" y1="11" x2="53" y2="31"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="61" y1="11" x2="61" y2="31"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="69" y1="11" x2="69" y2="31"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="2" stroke-linecap="square" stroke-miterlimit="10" x1="77" y1="11" x2="77" y2="31"/>
+</svg>

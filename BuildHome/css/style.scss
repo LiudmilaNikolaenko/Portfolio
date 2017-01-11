@@ -1,0 +1,530 @@
+@import 'variables';
+
+@mixin zero-spacing{
+	font-size: 0;
+	letter-spacing: 0;
+}
+
+@mixin wrapper{
+	width: 1160px;
+	margin: 0 auto;
+}
+
+a{
+	text-decoration: none;
+}
+header{
+	@include wrapper;
+}
+.clearfix:after{
+	content: '';
+	display: block;
+	clear: both;
+}
+.logo_bh{
+	width: 250px;
+	float: left;
+	margin-top: 35px;
+}
+.social_net{
+	width: 236px;
+	float: right;
+	margin-top: 50px;
+	text-align: right;
+	&__icon{
+		display: inline-block;
+		width: 24px;
+		margin: 0 10px;
+		color: $color-lightgrey;
+		text-align: center;
+		font-size: 24px;
+	}
+}
+.menu{
+	@include wrapper;
+	margin-top: 40px;
+	background: #2a2d32;
+	&__side{
+		width: 605px;
+		float: left;
+		@include zero-spacing;
+		&__item{
+			display: inline-block;
+			width: 120px;
+			line-height: 56px;
+			border-right: 1px solid black;
+			text-align: center;
+			font:{
+				family: $font-ubuntu;
+				size: 14px;
+			}
+			letter-spacing: normal;
+			&--active{
+				background: $color-blue;
+			}
+			a{
+				color: white;
+				&:hover{
+				color: $color-yellow;
+				}
+			}
+		}
+	}
+	&__search{
+		float: right;
+		width: 240px;
+		@include zero-spacing;
+		border: 1px solid #181a1d;
+		margin: 8px;
+		&__string{
+			display: inline-block;
+			vertical-align: top;
+			width: 190px;
+			padding-left: 10px;
+			line-height: 36px;
+			font:{
+				family: Arial;
+				size: 12px;
+			}
+			letter-spacing: normal;
+			text-align: left;
+			background: $background-search;
+			color: $color-lightgrey;
+			border: none;
+		}
+		&__botton{
+			display: inline-block;
+			vertical-align: top;
+			width: 40px;
+			line-height: 24px;
+			padding: 9px 0 3px 3px;
+			font-size: 24px;
+			text-align: center;
+			background: $background-search;
+			color: $color-lightgrey;
+			border: none;
+		}
+	}
+}
+table{
+	border-collapse: collapse;
+}
+.veil{
+	position: absolute;
+	top: 0;
+	left: 0;
+	&__cell1{
+		width: 332px;
+		height: 471px;
+		border: 1px solid $color-blue;
+	}
+	&__cell2{
+		width: 117px;
+		height: 117px;
+		border: 1px solid $color-blue;
+	}
+	&__cell3{
+		width: 117px;
+		height: 117px;
+		background: $color-blue;
+		opacity: 0.4;
+		border: 1px solid $color-blue;
+	}
+}
+.byb{
+	position: absolute;
+	bottom: 40px;
+	left: 40px;
+	p{
+		background: rgba(42, 45, 50, 0.9);
+		font:{
+			family: $font-ubuntu;
+			size: 40px;
+		}
+	}
+	&__string1{
+		width: 92px;
+		color: $color-yellow;
+		padding: 30px 30px 0;
+	}
+	&__string2{
+		width: 92px;
+		color: white;
+		padding: 0 30px;
+		span{
+			position: relative;
+			top: 15px;
+			left: 0;
+		}
+	}
+	&__string3{
+		width: 142px;
+		color: white;
+		padding: 30px;
+	}
+}
+.b123{
+	@include zero-spacing;
+	text-align: center;
+	height: 265px;
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		text-align: left;
+		width: 354px;
+		&__number{
+			display: inline-block;
+			vertical-align: top;
+			width: 120px;
+			font:{
+				family: $font-ubuntu;
+				size: 90px;
+			}
+			color: $color-lightgrey;
+			opacity: 0.2;
+		}
+		&__content{
+			display: inline-block;
+			vertical-align: top;
+			width: 234px;
+			&__icon{
+				color: $color-yellow;
+				font-size: 40px;
+			}
+			&__header{
+				margin: 20px 0;
+				font:{
+					family: $font-ubuntu;
+					size: 20px;
+				}
+				color: $color-darkgrey;
+			}
+			&__text{
+				margin-bottom: 20px;
+				font:{
+					family: Arial;
+					size: 13px;
+				}
+				color: $color-lightgrey;
+				line-height: 20px
+			}
+			&__readmore{
+				font:{
+					family: $font-ubuntu;
+					size: 13px;
+				}
+  				& a{
+  					color: $color-darkgrey;
+  				}
+  				& span{
+    				color: $color-blue;
+  				}
+			}
+			&__readmore:hover{
+				& a{
+  					color: $color-blue;
+  				}
+  				& span{
+    				color: $color-lightgrey;
+  				}
+			}
+		}
+	}
+	&__spacing{
+		display: inline-block;
+		vertical-align: center;
+		width: 49px;
+	}
+}
+.background-services{
+	height: 500px;
+	background: #2a2d32;
+}
+.services{
+	@include wrapper;
+	@include zero-spacing;
+	h2{
+		padding: 50px 0 55px;
+		font:{
+			family: $font-ubuntu;
+			size: 24px;
+		}
+		color: white;
+	}
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		width: 260px;
+		position: relative;
+		text-align: center;
+		a{
+			div{
+				display: none;
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 260px;
+				height: 160px;
+				background: $color-blue;
+				color: white;
+				font-size: 60px;
+				padding-top: 100px;
+				opacity: 0.9
+			}
+			&:hover + p{
+				color: $color-yellow;
+			}
+			&:hover div{
+				display: block;
+			}
+		}
+		p{
+			margin: 30px 0 0;
+			font:{
+				family: $font-ubuntu;
+				size: 16px;
+			}
+			color: white;
+		}
+	}
+	&__spacing{
+		display: inline-block;
+		vertical-align: top;
+		width: 40px;
+	}
+}
+.nb{
+	height: 540px;
+	background: #f7f7f7;
+	@include zero-spacing;
+	text-align: center;
+	&__side{
+		display: inline-block;
+		width: 560px;
+		vertical-align: top;
+		text-align: left;
+		h2{
+			padding: 60px 0 50px;
+			font:{
+				family: $font-ubuntu;
+				size: 24px;
+			}
+			color: $color-darkgrey;
+		}
+		&__news{
+			&__item{
+				margin-bottom: 30px;
+				&__img{
+					display: inline-block;
+					vertical-align: top;
+					position: relative;
+					width: 150px;
+					&__date{
+						position: absolute;
+						top: 10px;
+						left: -15px;
+						width: 40px;
+						line-height: 40px;
+						font-family: $font-ubuntu;
+						text-align: center;
+						&__month{
+							background: $color-blue;
+							color: white;
+							font-size: 15px;
+						}
+						&__day{
+							background: $color-yellow;
+							color: $color-darkgrey;
+							font-size: 18px;
+						}
+					}
+				}
+				&__content{
+					display: inline-block;
+					vertical-align: top;
+					margin-left: 30px;
+					line-height: 20px;
+					width: 380px;
+					&__header{
+						font:{
+							family: $font-ubuntu;
+							size: 16px;
+						}
+						color: $color-darkgrey;
+						&:hover{
+							color: $color-blue;
+						}
+					}
+					&__by{
+						padding-bottom: 20px;
+						font:{
+							family: Arial;
+							size: 13px;
+						}
+						color: $color-darkgrey;
+						& a{
+							color: $color-blue;
+						}
+					}
+					&__text{
+						font:{
+							family: Arial;
+							size: 13px;
+						}
+						color: $color-lightgrey;
+					}
+				}
+			}
+		}
+		&__banners{
+			&__item{
+				margin-bottom: 5px;
+				position: relative;
+			}
+			&__radio{
+				position: absolute;
+				top: 11px;
+				left: 9px;
+    			clip: rect(0, 0, 0, 0);
+			}
+			&__radio:checked + &__botton:after{
+				content: "-";
+				background: $color-yellow;
+				border: 1px solid $color-yellow;
+				color: white;
+			}
+			&__radio:checked + &__botton + &__pannel{
+				background: $color-yellow;
+				border: 1px solid $color-yellow;
+				color: white;
+			}
+			&__radio:checked + &__botton + &__pannel + &__text{
+				display: block;
+			}
+			&__botton{
+				display: inline-block;
+			}
+			&__botton:after{
+				content: "+";
+				display: inline-block;
+				vertical-align: top;
+				width: 40px;
+				line-height: 40px;
+				background: white;
+				border: 1px solid #e8e8e8;
+				font-size: 13px;
+				color: $color-darkgrey;
+				text-align: center;
+				cursor: pointer;
+				position: relative;
+			}
+			&__pannel{
+				display: inline-block;
+				vertical-align: top;
+				width: 505px;
+				line-height: 40px;
+				background: white;
+				border: 1px solid #e8e8e8;
+				margin-left: 1px;
+				padding-left: 10px;
+				font:{
+					family: $font-ubuntu;
+					size: 13px;
+				}
+				color: $color-darkgrey;
+			}
+			&__text{
+				display: none;
+				padding: 20px 0 40px 44px;
+				font:{
+					family: Arial;
+					size: 13px;
+				}
+				color: $color-lightgrey;
+			}
+		}
+	}
+}
+.logos{
+	@include zero-spacing;
+	height: 150px;
+	padding-top: 90px;
+	text-align: center;
+	&__img{
+		display: inline-block;
+		vertical-align: top;
+	}
+	&__spacing{
+		display: inline-block;
+		vertical-align: top;
+		width: 50px;
+	}
+}
+.links{
+	height: 325px;
+	background: #2a2d32;
+	@include zero-spacing;
+	text-align: center;
+	&__item{
+		display: inline-block;
+		vertical-align: top;
+		width: 260px;
+		text-align: left;
+		&__header{
+			padding: 60px 0 50px;
+			font:{
+				family: $font-ubuntu;
+				size: 16px;
+			}
+			color: white;
+		}
+		&__list{
+			li{
+				border-top: 1px solid $color-lightgrey;
+				&:first-child{
+					border-top: none;
+				}
+				a{
+					line-height: 35px;
+					font:{
+						family: Arial;
+						size: 13px;
+					}
+					color: $color-lightgrey;
+					&:hover{
+						color: $color-blue;
+					}
+				}
+			}
+		}
+	}
+	&__spacing{
+		display: inline-block;
+		vertical-align: top;
+		width: 40px;
+	}
+}
+.background-contacts{
+	background: $background-contacts;
+}
+.contacts{
+	@include wrapper;
+	line-height: 60px;
+	font:{
+		family: Arial;
+		size: 13px;
+	}
+	color: $color-lightgrey;
+	&__adress{
+		float: left;
+		width: 650px;
+		&__item{
+			padding-right: 30px;
+		}
+	}
+	&__copywrite{
+		float: right;
+		width: 120px;
+		text-align: right;
+	}
+}

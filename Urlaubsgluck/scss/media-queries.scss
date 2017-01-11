@@ -1,0 +1,120 @@
+@media only screen and (-Webkit-min-device-pixel-ratio: 1.5),
+only screen and (-moz-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min-device-pixel-ratio: 1.5) {
+
+  	.promo {
+    	background-image: url(../img/promo@2x.jpg);
+  	}
+  	.howitworks__sliders__item{
+  		&__prev0, &__prev1, &__prev2,
+  		&__next0, &__next1, &__next2{
+  			background-image: url(../img/sprite@2x.png);
+  			background-size: 152px;
+  		}
+ 	}
+  	.partners__people__item__image{
+  		&__icon1, &__icon2, &__icon3, &__icon4{
+  			background-image: url(../img/sprite@2x.png);
+  			background-size: 152px;
+  		}
+  		&__icon1{
+  			background-position: -64px -26px;
+		}
+		&__icon2{
+  			background-position: -111px 0px;
+		}
+		&__icon3{
+  			background-position: 0px -83px;
+		}
+		&__icon4{
+  			background-position: -42px -83px;
+		}
+  	}
+  	.footer__logo__image{
+  		background-image: url(../img/sprite@2x.png);
+  		background-size: 152px;
+  	}
+
+}
+
+@media screen and (max-width: 769px){
+
+.promo{
+	&__header{
+		&__title,
+		&__spacing{
+			display: none;
+		}
+	}
+	&__content{
+		&__title{
+			display: block;
+		}
+		&__bigtext{
+			font-size: 30px;
+		}
+		&__smalltext{
+			padding: 20px 40px;
+			font-size: 18px;
+		}
+	}
+}
+.howitworks{
+	&__sliders{
+		&__item{
+			width: 100%;
+			height: 240px;
+			&__image{
+				display: inline-block;
+			}
+			&__slides{
+				display: none;
+			}
+			&__prev0, &__prev1, &__prev2{
+				display: none;
+			}
+			&__next0, &__next1, &__next2{
+				display: none;
+			}
+		}
+	}
+}	
+
+.ideas{
+	&__tile{
+		&__item{
+			width: 100%;
+			height: 120px;
+			&__img{
+				min-height: 120px;
+			}
+		}
+		.widthx2{
+			width: 100%;
+		}
+	}
+}
+
+.footer{
+	text-align: center;
+	&__title,
+	&__company{
+		width: 100%;
+		li{
+			display: inline-block;
+			padding-left: 5px;
+		}
+	}
+	&__logo{
+		position: relative;
+		top: 0;
+		right: 0;
+		width: 100%;
+		&__text{
+			text-align: center;
+		}
+	}
+}
+
+}

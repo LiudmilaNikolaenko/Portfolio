@@ -1,0 +1,12 @@
+<svg viewBox="-1 23 61 65">	
+	<circle fill="#cfcfcf" cx="16.496" cy="43.313" r="1.438"/>
+	<circle fill="#cfcfcf" cx="12.496" cy="65.313" r="1.438"/>
+	<circle fill="#cfcfcf" cx="12.496" cy="75.313" r="1.438"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="22.5" y1="26" x2="22.5" y2="86"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="60.5" x2="58" y2="60.5"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="60.5" x2="22" y2="60.5"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="70.5" x2="22" y2="70.5"/>
+	<line fill="none" stroke="#cfcfcf" stroke-linecap="square" stroke-miterlimit="10" x1="24" y1="35.5" x2="58" y2="35.5"/>
+	<line fill="none" stroke="#cfcfcf" stroke-width="3" stroke-linecap="square" stroke-miterlimit="10" x1="2" y1="80.5" x2="22" y2="80.5"/>
+	<path fill="none" stroke="#cfcfcf" stroke-width="4" stroke-linecap="square" stroke-miterlimit="10" d="M58,86v-59.5c0-1.1-0.467-1.5-1.566-1.5h-53c-1.1,0-2.434,0.4-2.434,1.5V86"/>
+</svg>

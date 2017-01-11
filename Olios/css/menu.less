@@ -1,0 +1,146 @@
+@import "parametrs.less";
+a{
+	text-decoration: none;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	height: 100vh;
+	width: 100vw;
+	overflow: hidden;
+}
+.leftmenu{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 50;
+	width: @otstup*3;
+	height: 100vh;
+	background-color: white;
+	text-align: center;
+	&__logo{
+		padding: @otstup 0;
+		width: @otstup;
+		max-width: 42px;
+	}
+	&__link{
+		display: block;
+		margin: @otstup 0;
+		svg{
+			width: @otstup;
+		}
+		&:hover path{
+			fill: black;
+		}
+	}
+	&--in{
+		position: absolute;
+		bottom: @otstup;
+		left: 0;
+		width: 100%;
+	}
+}
+.wrapper_circle(){
+	position: absolute;
+	top: @otstup;
+	right: @otstup;
+	width: @otstup*2;
+	height: @otstup*2;
+	border-radius: @otstup;
+	background-color: white;
+	cursor: pointer;
+}
+.rightmenu{
+	z-index: 50;
+	.wrapper_gamburger{
+		.wrapper_circle;
+		.gamburger{
+			width: @otstup;
+			margin: @otstup/2 auto 0;
+			span{
+				display: block;
+				height: @otstup/5;
+				margin-bottom: @otstup/5;
+				background-color: @colorblue;
+			}
+		}
+	}
+	.rightmenu__panel{
+		box-sizing: border-box;
+		position: absolute;
+		top: 0;
+		right: -@otstup*6;
+		width: @otstup*6;
+		height: 100vh;
+		background-color: white;
+		transition: all 1s ease;
+		font-weight: 400;
+		font-size: 18vh/@rate;
+		padding-top: @otstup*6;
+		text-align: right;
+		.wrapper_cross{
+			.wrapper_circle;
+			box-shadow: 0 0 10px @colorgrey;
+			text-align: center;
+			.cross{
+				color: @colorblue;
+				font-weight: 400;
+				font-size: @otstup;
+				line-height: @otstup*2;
+			}
+		}
+		.rightmenu__item{
+			display: block;
+			padding: @otstup/2;
+			color: @colorgrey;
+			span{
+				margin-right: @otstup/2;
+			}
+			svg{
+				width: @otstup;
+				margin-right: @otstup/2;
+			}
+			&:hover{
+				color: black;
+				transform: scale(1.2);
+				path,
+				line,
+				rect,
+				polygon{
+					stroke: black;
+				}
+				circle{
+					fill: black;
+				}
+			}
+		}
+		.rightmenu__link{
+			position: absolute;
+			bottom: @otstup;
+			right: 0;
+			display: block;
+			width: 100%;
+			line-height: @otstup;
+			color: @colorblue;
+			text-align: center;
+			&:after{
+				content: '';
+				display: block;
+				width: @otstup;
+				margin: @otstup/4 auto;
+				border-top: 1px solid @colorblue;
+			}
+			&:hover{
+				color: black;
+				transform: scale(1.2);
+			}
+		}
+	}
+	&:hover{
+		.rightmenu__panel{
+			right: 0;
+		}
+		& + .slcircles{
+			display: none;
+		}
+	}
+}

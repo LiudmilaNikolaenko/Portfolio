@@ -1,0 +1,65 @@
+@import "parametrs.less";
+
+body{
+	background: url(../img/bg_home.jpg) top no-repeat @colorbg;
+	background-size: auto 100vh;
+}
+.home{
+	text-align: center;
+	position: relative;
+	&__bgtext{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100vw;
+		padding-top: 145vh / @rate;
+		font-weight: 900;
+		font-size: 400vh /@rate;
+		color: @colorgrey;
+		opacity: 0.3;
+		z-index: -1;
+	}
+	&__title{
+		padding-top: 145vh / @rate;
+		font-weight: 200;
+		font-size: 220vh / @rate;
+		color: black;
+	}
+	&__subtitle{
+		padding: 30vh / @rate 0 40vh / @rate;
+		font-weight: 300;
+		font-size: 36vh / @rate;
+		color: black;
+	}
+	&__btn{
+		display: block;
+		width: 220vh / @rate;
+		line-height: 56vh / @rate;
+		margin: 0 auto;
+		border-radius: 110vh / @rate;
+		background-color: @colorblue;
+		font-weight: 900;
+		font-size: 18vh / @rate;
+		color: white;
+		&:hover{
+			background-color: black;
+		}
+	}
+}
+.slcircles{
+	position: absolute;
+	bottom: 95vh / @rate;
+	right: 175vh / @rate;
+	&__item{
+		display: inline-block;
+		width: 14vh / @rate;
+		height: 14vh / @rate;
+		border-radius: 7vh / @rate;
+		border: 1px solid @colorgrey;
+		margin: 0 45vh / @rate;
+	}
+	&--activ{
+		border: 1px solid @colorblue;
+		background-color: @colorblue;
+	}
+}

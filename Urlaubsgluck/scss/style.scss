@@ -1,0 +1,493 @@
+@import 'fonts';
+
+@mixin zero-spacing{
+	font-size: 0;
+	letter-spacing: 0;
+}
+
+$colorRed: #ff4e50;
+
+a{
+	text-decoration: none;
+}
+.promo{
+	width: 100%;
+	max-width: 1440px;
+	margin: 0 auto 98px;
+	height: 700px;
+	background: url(../img/promo.jpg) no-repeat top grey;
+	background-size: 1440px 700px;
+	@include zero-spacing;
+	text-align: center;
+	font:{
+		family: 'montserrat';
+		weight: bold;
+	}
+	color: white;
+	&__header{
+		height: 34px;
+		padding: 41px 0;
+		&__title{
+			display: inline-block;
+			vertical-align: top;
+			padding-top: 8px;
+			text-align: right;
+			font-size: 20px;
+			letter-spacing: 1px;
+		}
+		&__spacing{
+			display: inline-block;
+			vertical-align: top;
+			width: 44%;
+		}
+		&__login{
+			display: inline-block;
+			vertical-align: top;
+			width: 173px;
+			&__button{
+				display: inline-block;
+				vertical-align: top;
+				line-height: 34px;
+				padding: 0 18px;
+				border: 1px solid rgba(255, 255, 255, 0);
+				border-radius: 17px;
+				color: white;
+				font-size: 14px;
+				letter-spacing: normal;
+				&:hover{
+					border: 1px solid rgba(255, 255, 255, 1);
+				}
+			}
+		}
+	}
+	&__content{
+		width: 100%;
+		max-width: 500px;
+		margin: 102px auto;
+		letter-spacing: normal;
+		&__title{
+			display: none;
+			padding-bottom: 40px;
+			font-size: 20px;
+		}
+		&__bigtext{
+			font-size: 52px;
+			line-height: 62px;
+		}
+		&__smalltext{
+			padding: 24px 0;
+			font:{
+				family: 'roboto';
+				weight: 200;
+				size: 24px;
+			}
+		}
+		&__button{
+			display: inline-block;
+			vertical-align: top;
+			margin-top: 14px;
+			line-height: 38px;
+			padding: 0 22px;
+			border-radius: 17px;
+			background: $colorRed;
+			color: white;
+			font-size: 14px;
+		}
+	}
+}
+.howitworks{
+	text-align: center;
+	font:{
+		family: 'montserrat';
+		weight: bold;
+	}
+	&__header{
+		color: black;
+		font:{
+			family: 'montserrat';
+			weight: bold;
+			size: 22px;
+		}	
+		padding-bottom: 35px;
+	}
+	&__sliders{
+		color: white;
+		@include zero-spacing;
+		margin-bottom: 89px;
+		&__item{
+			position: relative;
+			display: inline-block;
+			vertical-align: top;
+			width: 33%;
+			max-width: 320px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			margin-bottom: 10px;
+			height: 400px;
+			overflow: hidden;
+			&__image{
+				display: none;
+			}
+			&__slides{
+				position: relative;
+				&__slide0, &__slide1, &__slide2{
+					height: 400px;
+					position: absolute;
+					top: 0;
+					left: 0;
+					opacity: 0;
+					z-index: 1;
+					transition: opacity 1s;
+				}
+				.showing{
+					opacity: 1;
+					z-index: 2;
+				}
+			}
+			&__content{
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				z-index: 3;
+				text-align: left;
+				margin: 17px 29px;
+				letter-spacing: normal;
+				&__step{
+					display: inline-block;
+					vertical-align: top;
+					line-height: 20px;
+					padding: 0 13px;
+					margin-left: 3px;
+					border-radius: 10px;
+					background: $colorRed;
+					font:{
+						weight: normal;
+						size: 10px;
+					}
+					letter-spacing: 2px;
+				}
+				&__bigtext{
+					padding: 15px 0 13px;
+					font-size: 24px;
+					line-height: 28px;
+				}
+				&__smalltext{
+					line-height: 16px;
+					font:{
+						family: 'roboto';
+						weight: 200;
+						size: 14px;
+					}
+				}
+			}
+			&__prev0, &__prev1, &__prev2{
+				position: absolute;
+				top: 154px;
+				left: 30px;
+				z-index: 4;
+				display: inline-block;
+				width: 30px;
+				height: 56px;
+				background-image: url(../img/sprite.png);
+				background-repeat: no-repeat;
+				background-size: 153px;
+  				background-position: -32px -26px;
+				cursor: pointer;
+			}
+			&__next0, &__next1, &__next2{
+				position: absolute;
+				top: 154px;
+				right: 30px;
+				z-index: 4;
+				display: inline-block;
+				width: 30px;
+				height: 56px;
+				background-image: url(../img/sprite.png);
+				background-repeat: no-repeat;
+				background-size: 153px;
+				background-position: 0px -26px;
+				cursor: pointer;
+			}
+		}
+	}
+}
+.partners{
+	text-align: center;
+	margin-bottom: 69px;
+	&__people{
+		color: black;
+		@include zero-spacing;
+		&__concat2{
+			display: inline-block;
+			vertical-align: top;
+			&__spacing{
+				display: inline-block;
+				vertical-align: top;
+				width: 30px;
+			}
+		}
+		&__item{
+			display: inline-block;
+			vertical-align: top;
+			width: 210px;
+			margin-bottom: 32px;
+			letter-spacing: normal;
+			&__image{
+				position: relative;
+				&__photo{
+					display: inline-block;
+					width: 130px;
+					height: 120px;
+					border-radius: 60px;
+					overflow: hidden;
+					position: relative;
+					img{
+						max-width: 120px;
+						position: absolute;
+						top: 0;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						margin: auto;
+					}
+				}
+				&__icon1, &__icon2, &__icon3, &__icon4{
+					position: absolute;
+					bottom: -4px;
+					right: 0;
+					width: 41px;
+					height: 41px;
+					background-image: url(../img/sprite.png);
+					background-repeat: no-repeat;
+					background-size: 153px;
+				}
+				&__icon1{
+  					background-position: 0px -83px;
+				}
+				&__icon2{
+  					background-position: -42px -83px;
+				}
+				&__icon3{
+  					background-position: -64px -26px;
+				}
+				&__icon4{
+  					background-position: -112px 0px;
+				}
+			}
+			&__bigtext{
+				margin: 20px 0 13px;
+				font:{
+					family: 'montserrat';
+					weight: bold;
+					size: 14px;
+				}
+			}
+			&__smalltext{
+				color: grey;
+				font:{
+					family: 'roboto';
+					weight: 200;
+					size: 14px;
+				}
+				line-height: 18px;
+			}
+		}
+		&__spacing{
+			display: inline-block;
+			vertical-align: top;
+			width: 30px;
+		}
+	}
+	&__button{
+		display: inline-block;
+		vertical-align: top;
+		margin-bottom: 30px;
+		line-height: 38px;
+		padding: 0 28px;
+		border-radius: 20px;
+		border: 1px solid $colorRed;
+		color: $colorRed;
+		font:{
+			family: 'montserrat';
+			weight: bold;
+			size: 14px;
+		}
+	}
+}
+.ideas{
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+	&__tile{
+		&__item{
+			width: 33%;
+			height: 310px;
+			box-sizing: border-box;
+			padding: 0 10px;
+			overflow: hidden;
+			border-radius: 5px;
+			margin-bottom: 20px;
+			a{
+				display: inline-block;
+				width: 100%;
+				height: 100%;
+				position: relative;	
+			}
+			&__img{
+				width: 100%;
+				min-height: 310px;
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				margin: auto;
+			}
+			&__text{
+				position: absolute;
+				top: 140px;
+				left: 0;
+				width: 100%;
+				color: white;
+				font:{
+					family: 'montserrat';
+					weight: bold;
+					size: 22px;
+				}
+			}
+		}
+		.widthx2{
+			width: 66%;
+		}
+	}
+}
+.search{
+	text-align: center;
+	padding-top: 79px;
+	&__smalltext{
+		color: grey;
+		font:{
+			family: 'roboto';
+			weight: 200;
+			size: 18px;
+		}
+		
+	}
+	&__form{
+		&__text{
+			width: 222px;
+			height: 34px;
+			line-height: 34px;
+			padding-left: 14px;
+			margin: 40px 8px 0 0;
+			text-align: left;
+			color: grey;
+			font:{
+				family: 'roboto';
+				weight: 200;
+				size: 14px;
+			}
+		}
+		&__button{
+			margin: 40px 0 99px;
+			line-height: 38px;
+			padding: 0 23px;
+			border-radius: 20px;
+			border: 1px solid $colorRed;
+			background: $colorRed;
+			color: white;
+			font:{
+				family: 'montserrat';
+				weight: bold;
+				size: 14px;
+			}
+			cursor: pointer;
+			outline: none;
+			&:active,
+			&:focus {
+    			outline: none;
+			}
+		}
+	}
+}
+.strip{
+	height: 4px;
+	background: $colorRed;
+}
+.footer{
+	width: 100%;
+	max-width: 960px;
+	height: 155px;
+	margin: 38px auto;
+	position: relative;
+	&__title{
+		display: inline-block;
+		vertical-align: top;
+		width: 236px;
+		margin-left: 10px;
+		margin-bottom: 20px;
+		color: $colorRed;
+		font:{
+			family: 'montserrat';
+			weight: bold;
+			size: 16px;
+		}
+		letter-spacing: 0.9px;
+	}
+	&__company{
+		display: inline-block;
+		vertical-align: top;
+		width: 156px;
+		margin: -4px 0 20px;
+		line-height: 24px;
+		&__header{
+			color: black;	
+			font:{
+				family: 'montserrat';
+				weight: bold;
+				size: 14px;
+			}
+			margin-bottom: 5px;
+		}
+		&__item{
+			line-height: 16px;
+			color: grey;
+			font:{
+				family: 'roboto';
+				weight: 200;
+				size: 14px;
+			}
+		}
+	}
+	&__logo{
+		display: inline-block;
+		vertical-align: top;
+		position: absolute;
+		top: 0;
+		right: 10px;
+		width: 110px;
+		&__text{
+			margin-bottom: 10px;
+			text-align: right;
+			color: grey;
+			font:{
+				family: 'montserrat';
+				weight: bold;
+				size: 10px;
+			}
+			letter-spacing: 0.9px;
+		}
+		&__image{
+			display: inline-block;
+			vertical-align: top;
+			width: 110px;
+			height: 24px;
+			background-image: url(../img/sprite.png);
+			background-repeat: no-repeat;
+			background-size: 153px;
+  			background-position: 0px 0px;
+			
+		}
+	}
+}

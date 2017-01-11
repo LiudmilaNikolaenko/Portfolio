@@ -1,0 +1,8 @@
+@font-face {
+  font-family: 'Ubuntu_condensedregular';
+  src: url("../fonts/ubuntu-condensed-webfont.eot");
+  src: url("../fonts/ubuntu-condensed-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/ubuntu-condensed-webfont.woff2") format("woff2"), url("../fonts/ubuntu-condensed-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+/*# sourceMappingURL=variables.css.map */

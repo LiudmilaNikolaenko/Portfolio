@@ -1,0 +1,126 @@
+@import "parametrs.less";
+
+body{
+	background-color: @colorbg;
+}
+.inlbl(){
+	display: inline-block;
+	vertical-align: top;
+}
+.categories{
+	width: 1540vh / @rate;
+	margin: 0 auto;
+	.categories__header{
+		padding: 95vh/@rate 20vh/@rate;
+		h1{
+			float: left;
+			color: black;
+			font-weight: 300;
+			font-size: 72vh / @rate;
+		}
+		.categories__name{
+			float: right;
+			vertical-align: middle;
+			color: @colorgrey;
+			font-weight: 400;
+			font-size: 18vh / @rate;
+			svg{
+				vertical-align: middle;
+				height: 60vh / @rate;
+				margin-left: 30vh / @rate;
+			}
+		}
+		&:after{
+			content: "";
+			clear: both;
+		}
+	}
+	.categories__main{
+		font-size: 0;
+		.categories__product{
+			.inlbl;
+			width: 345vh / @rate;
+			height: 425vh / @rate;
+			margin: 20vh / @rate;
+			background-color: white;
+			text-align: center;
+			transition: all 1s ease;
+			img{
+				margin: 68vh/@rate 30vh/@rate 69vh/@rate;
+				height: 163vh / @rate;
+			}
+			.categories__title{
+				margin: 0 30vh/@rate;
+				text-align: left;
+				color: black;
+				font-weight: 300;
+				font-size: 30vh / @rate;
+			}
+			.categories__text{
+				margin: 5vh/@rate 30vh/@rate 0;
+				text-align: left;
+				color: @colorgrey;
+				font-weight: 300;
+				font-size: 18vh / @rate;
+			}
+			.categories__price{
+				margin: 15vh/@rate 30vh/@rate 0;
+				text-align: left;
+				color: @colorblue;
+				font-weight: 900;
+				font-size: 18vh / @rate;
+			}
+			&:hover{
+				transform: scale(0.9);
+			}
+		}
+		.w3{
+			width: 1115vh / @rate;
+			img{
+				margin-top: 88vh / @rate;
+				margin-right: 110vh/@rate;
+				height: 248vh / @rate;
+				float: left;
+			}
+			.categories__title{
+				margin-top: 120vh/@rate;
+				font-size: 46vh / @rate;
+			}
+			.categories__text,
+			.categories__price{
+				font-size: 28vh / @rate;
+			}
+			&:after{
+				content: "";
+				clear: left;
+			}
+		}
+		.w2{
+			width: 730vh / @rate;
+			img{
+				margin-top: 114vh / @rate;
+				margin-right: 50vh / @rate;
+				height: 196vh / @rate;
+				float: left;
+			}
+			.categories__title{
+				margin-top: 160vh/@rate;
+			}
+			&:after{
+				content: "";
+				clear: left;
+			}
+		}
+	}
+	.categories__more{
+		display: block;
+		margin-top: 110vh/@rate;
+		text-align: center;
+		color: @colorblue;
+		font-weight: 900;
+		font-size: 18vh / @rate;
+		&:hover{
+			color: black;
+		}
+	}
+}
