@@ -7,9 +7,30 @@ body{
 a{
 	text-decoration: none;
 }
-.hero{
+.slider{
+	position: relative;
 	height: 650px;
-	background: url(../img/computer.jpg) top no-repeat grey;
+	background-color: grey;
+}
+.slider__img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	z-index: 1;
+	transition: opacity 1s;
+	display: block;
+	height: 650px;
+}
+.showing{
+	opacity: 1;
+	z-index: 3;
+}
+.hero{
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 5;
 	color: white;
 }
 header{
@@ -90,10 +111,25 @@ nav{
 	text-align: center;
 	color: black;
 	font-size: 16px;
+	cursor: pointer;
 }
-.filtres_item:hover{
+.active{
 	background: #48bf72;
 	color: white;
+}
+.isotope{
+	width: 1200px;
+	margin: 0 auto;
+}
+.isotope:after{
+	content: "";
+	clear: both;
+}
+.isotope_img{
+	display: block;
+	width: 250px;
+    float: left;
+    margin: 25px;
 }
 .portfolio{
 	width: 1200px;
@@ -101,22 +137,18 @@ nav{
 	text-align: center;
 	font-size: 0;
 }
-.column1{
-	display: inline-block;
-	vertical-align: top;
-	width: 490px;
-}
-.column2{
-	display: inline-block;
-	vertical-align: top;
-	width: 690px;
-}
 .conteiner{
 	display: block;
-	margin: 20px;
 	position: relative;
 	border-radius: 10px;
-	background: #48bf72;
+	background-color: #48bf72;
+	margin: 25px;
+}
+.size450{
+	width: 450px;
+}
+.size650{
+	width: 650px;
 }
 .img_text{
 	position: absolute;
@@ -128,20 +160,14 @@ nav{
 	height: 50px;
 	margin: auto;
 	color: white;
+	text-align: center;
 	opacity: 0;
-	text-align: center; 
 }
 .img_text h4{
 	font-size: 30px;
 }
 .img_text p{
 	font-size: 16px;
-}
-.conteiner:hover img{
-	opacity: 0.5;
-}
-.conteiner:hover .img_text{
-	opacity: 1;
 }
 .about{
 	height: 500px;
