@@ -1,0 +1,48 @@
+html, body{
+	height: 100%;
+	background: black;
+}
+.panelTime{
+	width: 428px;
+	margin: 100px auto 0;
+	color: red;
+	font-weight: bold;
+	font-family: Arial;
+	font-size: 72px;
+}
+.box{
+	text-align: center;
+}
+.buttonLeft, .buttonSplit, .buttonReset{
+	display: inline-block;
+	margin-top: 15px;
+	padding: 5px;
+	border: 1px solid #c1c1c1;
+	background: white;
+	color: black;
+	font-family: Arial;
+	font-size: 36px;
+	text-align: center;
+	cursor: pointer;
+}
+.buttonLeft{
+	width: 75px;
+}
+.results{
+	display: block;
+	width: 400px;
+	margin: 15px auto;
+	color: #c1c1c1;
+	font-family: Arial;
+	font-size: 36px;
+	font-weight: bold;
+}
+.buttonBack{
+	display: block;
+	width: 280px;
+	margin: 15px auto;
+	color: white;
+	font-family: Arial;
+	font-size: 24px;
+	text-align: center;
+}

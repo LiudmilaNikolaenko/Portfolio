@@ -1,0 +1,128 @@
+
+body{
+    font-family: sans-serif; }
+.photos {
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	text-align: center;
+    font-size: 0; }
+.photos__header {
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 35px; }
+.photos__item {
+	display: inline-block;
+    width: 320px;
+    height: 350px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    overflow: hidden;
+    margin-bottom: 20px; }
+.photos__box {
+    display: inline-block;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    box-sizing: border-box;
+    border: 1px solid grey;
+    border-radius: 5px; }
+.photos__img {
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer; }
+.photos__text {
+	display: inline-block;
+	margin: 0 10px;
+	line-height: 50px;
+	text-align: center;
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+    cursor: pointer; }
+.photos__text:hover{
+    color: grey; }
+.photos__page{
+	text-align: left; }
+.photos__pnum{
+	padding: 0 10px;
+	color: black;
+    font-weight: 200;
+    font-size: 22px;
+    text-decoration: underline;
+    cursor: pointer; }
+.current{
+	color: grey;
+	text-decoration: none; }
+
+.search {
+	text-align: center;
+	padding-top: 79px; }
+.search__title {
+    color: grey;
+    font-weight: 200;
+    font-size: 18px; }
+.search__text {
+    width: 222px;
+    height: 34px;
+    line-height: 34px;
+    padding-left: 14px;
+    margin: 40px 8px 0 0;
+    text-align: left;
+    color: grey;
+    font-weight: 200;
+    font-size: 14px; }
+.search__button {
+    margin: 40px 0 99px;
+    line-height: 38px;
+    padding: 0 23px;
+    border-radius: 20px;
+    border: 1px solid #ff4e50;
+    background: #ff4e50;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none; }
+.search__button:active, .search__button:focus {
+    outline: none; }
+
+.overlay{
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    cursor: pointer; }
+.modalfr{
+    width: 90vh;
+    max-width: 90vw;
+    height: 90vh;
+    max-height: 90vw;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    overflow: hidden;
+    border: 3px double darkgrey;
+    border-radius: 5px; }
+.modalfr__img{
+    width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto; }
