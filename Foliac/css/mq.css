@@ -1,0 +1,137 @@
+@media screen and (max-width: 1220px) {
+	.isotope, .portfolio{
+		width: 900px;
+	}
+	.size450{
+		width: 300px;
+	}
+	.size650{
+		width: 500px;
+	}
+}
+@media screen and (max-width: 920px) {
+	nav{
+		padding-top: 49px;
+	}
+	.item{
+		width: 60px;
+		line-height: 16px;
+		font-size: 10px;
+	}
+	.separator{
+		height: 16px;
+	}
+	.hero_title{
+		font-size: 24px;
+	}
+	.hero_text{
+		font-size: 18px;
+	}
+	.isotope, .portfolio, 
+	.contact, .message, .contact_button{
+		width: 600px;
+	}
+	.size450{
+		width: 200px;
+	}
+	.size650{
+		width: 300px;
+	}
+	.text_item{
+		padding-top: 50px;
+	}
+	.text_item h3{
+		font-size: 22px;
+	}
+	.text_item h4{
+		font-size: 16px;
+	}
+	.text_item p{
+		font-size: 12px;
+	}
+	.contact a{
+		font-size: 22px;
+	}
+	.nom, .email{
+		display: block;
+	}
+	.nom{
+		margin-right: 0;
+	}
+	textarea{
+		width: 515px;
+	}
+	.footer{
+		padding-top: 35px;
+	}
+	.copyright{
+		float: none;
+		display: block;
+		text-align: center;
+		font-size: 14px;
+		padding-left: 0;
+	}
+	.social{
+		float: none;
+		display: block;
+		text-align: center;
+		padding-right: 0;
+	}
+	.social a:first-child{
+		margin-left: 0;
+	}
+}
+@media screen and (max-width: 620px) {
+	.image{
+		display: block;
+	}
+	.slider{
+		display: none;
+	}
+	.logo{
+		display: block;
+		float: none;
+		text-align: center;
+		padding-left: 0;
+	}
+	nav{
+		display: block;
+		float: none;
+		text-align: center;
+		padding-right: 0;
+	}
+	.hero_title{
+		margin-top: 100px;
+	}
+	.isotope, .portfolio, 
+	.contact, .nom, .email, .message, .contact_button{
+		width: 300px;
+	}
+	.size450{
+		width: 250px;
+	}
+	.size650{
+		width: 250px;
+	}
+	.text_item h3{
+		font-size: 18px;
+	}
+	.text_item h4{
+		font-size: 14px;
+	}
+	.text_item p{
+		font-size: 10px;
+	}
+	input{
+		width: 217px;
+	}
+	textarea{
+		width: 215px;
+	}
+	.footer{
+		padding-top: 20px;
+	}
+	.social a{
+		margin-left: 10px;
+	}
+}
