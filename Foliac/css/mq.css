@@ -63,6 +63,7 @@
 	}
 	.footer{
 		padding-top: 35px;
+		padding-bottom: 35px;
 	}
 	.copyright{
 		float: none;
@@ -130,6 +131,7 @@
 	}
 	.footer{
 		padding-top: 20px;
+		padding-bottom: 20px;
 	}
 	.social a{
 		margin-left: 10px;
