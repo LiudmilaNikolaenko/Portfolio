@@ -38,4 +38,12 @@ $(function(){
 		columnWidth: 50,
 	});
 
+	$(".gamburger").click(function(){
+		$("nav").css("right", "20px");
+	});
+
+	$(".close").click(function(){
+		$("nav").css("right", "-140px");
+	});
+
 });

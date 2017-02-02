@@ -11,15 +11,31 @@
 }
 @media screen and (max-width: 920px) {
 	nav{
-		padding-top: 49px;
+		position: absolute;
+		top: 20px;
+		right: -140px;
+		display: block;
+		float: none;
+		text-align: left;
+		padding-right: 0;
+		height: 154px;
+		background-color: grey;
+		z-index: 200;
+		box-sizing: border-box;
+		transition: all 1s ease;
+	}
+	.close{
+		display: block;
 	}
 	.item{
-		width: 60px;
-		line-height: 16px;
-		font-size: 10px;
+		display: block;
+		border-top: 1px solid white;
 	}
 	.separator{
-		height: 16px;
+		display: none;
+	}
+	.gamburger{
+		display: inline-block;
 	}
 	.hero_title{
 		font-size: 24px;
@@ -88,21 +104,6 @@
 	}
 	.slider{
 		display: none;
-	}
-	.logo{
-		display: block;
-		float: none;
-		text-align: center;
-		padding-left: 0;
-	}
-	nav{
-		display: block;
-		float: none;
-		text-align: center;
-		padding-right: 0;
-	}
-	.hero_title{
-		margin-top: 100px;
 	}
 	.isotope, .portfolio, 
 	.contact, .nom, .email, .message, .contact_button{
