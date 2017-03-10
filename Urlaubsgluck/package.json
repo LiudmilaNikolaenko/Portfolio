@@ -1,21 +1,12 @@
 {
-  "name": "examwork",
+  "name": "urlaubsgluck",
   "version": "1.0.0",
-  "description": "TechSkills",
-  "main": "index.js",
+  "main": "gulpfile.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LiudmilaNikolaenko/examwork.git"
-  },
-  "author": "",
+  "author": "Liudmila Nikolaenko",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LiudmilaNikolaenko/examwork/issues"
-  },
-  "homepage": "https://github.com/LiudmilaNikolaenko/examwork#readme",
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-cache": "^0.4.5",
@@ -25,5 +16,7 @@
     "gulp-sass": "^2.3.2",
     "gulp-uglify": "^2.0.0",
     "gulp-useref": "^3.1.2"
-  }
+  },
+  "description": ""
 }
+
