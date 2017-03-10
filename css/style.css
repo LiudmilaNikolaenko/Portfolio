@@ -1,5 +1,7 @@
+body{
+    font-family: "Lato", Calibri, sans-serif;
+}
 h1, h2, h3, h4 {
-    font-family: "Lato", sans-serif;
     font-weight: 700;
 }
 
@@ -112,7 +114,7 @@ h1, h2, h3, h4 {
     color: rgb(45, 59, 77);
 }
 .portfolio__link p {
-    height: 60px;
+    height: 40px;
 }
 .portfolio__hover {
     position: absolute;
