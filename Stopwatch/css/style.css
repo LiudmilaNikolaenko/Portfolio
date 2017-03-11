@@ -1,14 +1,15 @@
-html, body{
+body{
 	height: 100%;
-	background: black;
+	background-color: #8b929a;
+	font-family: Calibri, sans-serif;
 }
 .panelTime{
-	width: 428px;
-	margin: 100px auto 0;
-	color: red;
+	width: 260px;
+	margin: 50px auto 0;
+	color: #2d3b4d;
+	text-shadow: 1px 1px 3px white;
 	font-weight: bold;
-	font-family: Arial;
-	font-size: 72px;
+	font-size: 48px;
 }
 .box{
 	text-align: center;
@@ -18,31 +19,28 @@ html, body{
 	margin-top: 15px;
 	padding: 5px;
 	border: 1px solid #c1c1c1;
-	background: white;
-	color: black;
-	font-family: Arial;
-	font-size: 36px;
+	background-color: white;
+	color: #2d3b4d;
+	font-size: 24px;
 	text-align: center;
 	cursor: pointer;
 }
 .buttonLeft{
-	width: 75px;
+	width: 50px;
 }
 .results{
 	display: block;
-	width: 400px;
+	width: 240px;
 	margin: 15px auto;
-	color: #c1c1c1;
-	font-family: Arial;
-	font-size: 36px;
+	color: #2d3b4d;
+	font-size: 24px;
 	font-weight: bold;
 }
 .buttonBack{
 	display: block;
 	width: 280px;
 	margin: 15px auto;
-	color: white;
-	font-family: Arial;
-	font-size: 24px;
+	color: grey;
+	font-size: 16px;
 	text-align: center;
 }

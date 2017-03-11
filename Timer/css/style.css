@@ -1,27 +1,27 @@
-html, body{
+body{
 	height: 100%;
-	background: white;
+	background-color: #8b929a;
+	font-family: Calibri, sans-serif;
 }
 .wrapper{
-	width: 850px;
-	margin: 100px auto 0;
+	width: 300px;
+	margin: 50px auto 0;
 }
 .panel{
-	background: #8dcff4;
-	border: 15px solid black;
-	border-radius: 50px;
-	color: black;
+	background-color: white;
+	border: 5px solid #2d3b4d;
+	border-radius: 20px;
+	color: #2d3b4d;
 	font-weight: bold;
-	font-family: Arial;
 }
 .panelTime{
-	width: 640px;
+	width: 174px;
 	margin: 0 auto;
-	font-size: 160px;
+	font-size: 48px;
 }
 .panelMs{
-	padding-right: 120px;
-	font-size: 36px;
+	padding-right: 80px;
+	font-size: 24px;
 	text-align: right;
 }
 .clearfix:after{
@@ -31,31 +31,28 @@ html, body{
 }
 .buttonLeft, .buttonRight{
 	display: block;
-	width: 280px;
-	margin-top: 40px;
-	border: 10px solid black;
-	border-radius: 50px;
-	color: black;
+	width: 110px;
+	margin-top: 20px;
+	border: 3px solid #2d3b4d;
+	border-radius: 20px;
+	color: #2d3b4d;
 	font-weight: bold;
-	font-family: Arial;
-	font-size: 72px;
+	font-size: 36px;
 	text-align: center;
 	cursor: pointer;
+	background-color: white;
 }
 .buttonLeft{
 	float: left;
-	background: #00b034;
 }
 .buttonRight{
 	float: right;
-	background: #e3007b;
 }
 .buttonBack{
 	display: block;
 	width: 280px;
-	margin: 40px auto;
-	color: #3d107b;
-	font-family: Arial;
-	font-size: 24px;
+	margin: 20px auto;
+	color: grey;
+	font-size: 16px;
 	text-align: center;
 }

@@ -92,9 +92,9 @@ function writeToPanel() {
 
 function addInf() {
   if (position == 2) {
-    strInf = ' Stop: ';
+    strInf = '. Stop: ';
   } else {
-    strInf = ' Split: ';
+    strInf = '. Split: ';
   }
   count++;
   var inf = document.createElement('p');

@@ -27,7 +27,6 @@ var InIteration;
 function timerStart() {
   position = 1;
   buttonLeft.replaceChild(buttonPause, buttonStart);
-  buttonLeft.style.backgroundColor = '#0000ff';
   var start = Date.now();
   iterations(start);
 }
@@ -35,7 +34,6 @@ function timerStart() {
 function timerCont() {
   position = 1;
   buttonLeft.replaceChild(buttonPause, buttonCont);
-  buttonLeft.style.backgroundColor = '#0000ff';
   var start = Date.now() - timerMs;
   iterations(start);
 }
@@ -44,7 +42,6 @@ function timerPause() {
   clearInterval(InIteration);
   position = 2;
   buttonLeft.replaceChild(buttonCont, buttonPause);
-  buttonLeft.style.backgroundColor = '#00b034';
 }
 
 function timerClear() {
@@ -52,7 +49,6 @@ function timerClear() {
     if (position == 1) {
       clearInterval(InIteration);
       buttonLeft.replaceChild(buttonStart, buttonPause);
-    	buttonLeft.style.backgroundColor = '#00b034';
     } else {
     	buttonLeft.replaceChild(buttonStart, buttonCont);
     }
