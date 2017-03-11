@@ -7,9 +7,10 @@
 a {
   text-decoration: none; }
 
-header {
+.wrapper {
   width: 1160px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-family: 'Ubuntu_condensedregular', sans-serif; }
 
 .clearfix:after {
   content: '';
@@ -35,22 +36,18 @@ header {
     font-size: 24px; }
 
 .menu {
-  width: 1160px;
-  margin: 0 auto;
   margin-top: 40px;
-  background: #2a2d32; }
+  background-color: #2a2d32; }
   .menu__side {
     width: 605px;
     float: left;
-    font-size: 0;
-    letter-spacing: 0; }
+    font-size: 0; }
     .menu__side .menu__item {
       display: inline-block;
       width: 120px;
       line-height: 56px;
       border-right: 1px solid black;
       text-align: center;
-      font-family: "Ubuntu_condensedregular";
       font-size: 14px;
       letter-spacing: normal; }
       .menu__side .menu__item a {
@@ -58,14 +55,13 @@ header {
         .menu__side .menu__item a:hover {
           color: #f4b60d; }
       .menu__side .menu__item--active {
-        background: #248cec; }
+        background-color: #248cec; }
         .menu__side .menu__item--active a:hover {
           color: white; }
   .menu .menu__search {
     float: right;
     width: 240px;
     font-size: 0;
-    letter-spacing: 0;
     border: 1px solid #181a1d;
     margin: 8px; }
     .menu .menu__search .menu__string {
@@ -74,11 +70,10 @@ header {
       width: 190px;
       padding-left: 10px;
       line-height: 36px;
-      font-family: Arial;
       font-size: 12px;
       letter-spacing: normal;
       text-align: left;
-      background: #35383c;
+      background-color: #35383c;
       color: #8a8a8a;
       border: none;
       outline: none; }
@@ -90,7 +85,7 @@ header {
       padding: 9px 0 3px 3px;
       font-size: 24px;
       text-align: center;
-      background: #35383c;
+      background-color: #35383c;
       color: #8a8a8a;
       border: none;
       outline: none; }
@@ -113,7 +108,7 @@ table {
   .veil__cell3 {
     width: 117px;
     height: 117px;
-    background: #248cec;
+    background-color: #248cec;
     opacity: 0.4;
     border: 1px solid #248cec; }
 
@@ -122,8 +117,7 @@ table {
   bottom: 40px;
   left: 40px; }
   .byb p {
-    background: rgba(42, 45, 50, 0.9);
-    font-family: "Ubuntu_condensedregular";
+    background-color: rgba(42, 45, 50, 0.9);
     font-size: 40px; }
   .byb__string1 {
     width: 92px;
@@ -144,9 +138,6 @@ table {
 
 .b123 {
   font-size: 0;
-  letter-spacing: 0;
-  width: 1160px;
-  margin: 0 auto;
   text-align: center;
   height: 265px; }
   .b123__item {
@@ -158,7 +149,6 @@ table {
       display: inline-block;
       vertical-align: top;
       width: 120px;
-      font-family: "Ubuntu_condensedregular";
       font-size: 90px;
       color: #8a8a8a;
       opacity: 0.2; }
@@ -171,18 +161,15 @@ table {
         font-size: 40px; }
       .b123__item .b123__content .b123__header {
         margin: 20px 0;
-        font-family: "Ubuntu_condensedregular";
         font-size: 20px;
         color: #2a2d32; }
       .b123__item .b123__content .b123__text {
         padding-right: 10px;
         margin-bottom: 20px;
-        font-family: Arial;
         font-size: 13px;
         color: #8a8a8a;
         line-height: 20px; }
       .b123__item .b123__content .b123__readmore {
-        font-family: "Ubuntu_condensedregular";
         font-size: 13px; }
         .b123__item .b123__content .b123__readmore a {
           color: #2a2d32; }
@@ -198,17 +185,13 @@ table {
     width: 49px; }
 
 .background-services {
-  width: 1160px;
-  margin: 0 auto;
   height: 500px;
-  background: #2a2d32; }
+  background-color: #2a2d32; }
 
 .services {
-  font-size: 0;
-  letter-spacing: 0; }
+  font-size: 0; }
   .services h2 {
     padding: 50px 0 55px 10px;
-    font-family: "Ubuntu_condensedregular";
     font-size: 24px;
     color: white; }
   .services__item {
@@ -224,7 +207,7 @@ table {
       left: 0;
       width: 260px;
       height: 160px;
-      background: #248cec;
+      background-color: #248cec;
       color: white;
       font-size: 60px;
       padding-top: 100px;
@@ -235,7 +218,6 @@ table {
       display: block; }
     .services__item p {
       margin: 30px 0 0;
-      font-family: "Ubuntu_condensedregular";
       font-size: 16px;
       color: white; }
   .services__spacing {
@@ -244,12 +226,9 @@ table {
     width: 40px; }
 
 .nb {
-  width: 1160px;
-  margin: 0 auto;
   height: 540px;
-  background: #f7f7f7;
+  background-color: #f7f7f7;
   font-size: 0;
-  letter-spacing: 0;
   text-align: center; }
   .nb__side {
     display: inline-block;
@@ -258,7 +237,6 @@ table {
     text-align: left; }
     .nb__side h2 {
       padding: 60px 0 50px 10px;
-      font-family: "Ubuntu_condensedregular";
       font-size: 24px;
       color: #2a2d32; }
     .nb__side .nb__news .nb__item {
@@ -274,14 +252,13 @@ table {
           left: 10px;
           width: 40px;
           line-height: 40px;
-          font-family: "Ubuntu_condensedregular";
           text-align: center; }
           .nb__side .nb__news .nb__item .nb__img .nb__date .nb__month {
-            background: #248cec;
+            background-color: #248cec;
             color: white;
             font-size: 15px; }
           .nb__side .nb__news .nb__item .nb__img .nb__date .nb__day {
-            background: #f4b60d;
+            background-color: #f4b60d;
             color: #2a2d32;
             font-size: 18px; }
       .nb__side .nb__news .nb__item .nb__content {
@@ -291,20 +268,17 @@ table {
         line-height: 20px;
         width: 380px; }
         .nb__side .nb__news .nb__item .nb__content .nb__header {
-          font-family: "Ubuntu_condensedregular";
           font-size: 16px;
           color: #2a2d32; }
           .nb__side .nb__news .nb__item .nb__content .nb__header:hover {
             color: #248cec; }
         .nb__side .nb__news .nb__item .nb__content .nb__by {
           padding-bottom: 20px;
-          font-family: Arial;
           font-size: 13px;
           color: #2a2d32; }
           .nb__side .nb__news .nb__item .nb__content .nb__by a {
             color: #248cec; }
         .nb__side .nb__news .nb__item .nb__content .nb__text {
-          font-family: Arial;
           font-size: 13px;
           color: #8a8a8a; }
     .nb__side .nb__banners .nb__bitem {
@@ -317,11 +291,11 @@ table {
       clip: rect(0, 0, 0, 0); }
     .nb__side .nb__banners .nb__radio:checked + .nb__botton:after {
       content: "-";
-      background: #f4b60d;
+      background-color: #f4b60d;
       border: 1px solid #f4b60d;
       color: white; }
     .nb__side .nb__banners .nb__radio:checked + .nb__botton + .nb__pannel {
-      background: #f4b60d;
+      background-color: #f4b60d;
       border: 1px solid #f4b60d;
       color: white; }
     .nb__side .nb__banners .nb__radio:checked + .nb__botton + .nb__pannel + .nb__btext {
@@ -334,7 +308,7 @@ table {
       vertical-align: top;
       width: 40px;
       line-height: 40px;
-      background: white;
+      background-color: white;
       border: 1px solid #e8e8e8;
       font-size: 13px;
       color: #2a2d32;
@@ -346,25 +320,21 @@ table {
       vertical-align: top;
       width: 505px;
       line-height: 40px;
-      background: white;
+      background-color: white;
       border: 1px solid #e8e8e8;
       margin-left: 1px;
       padding-left: 10px;
-      font-family: "Ubuntu_condensedregular";
       font-size: 13px;
       color: #2a2d32; }
     .nb__side .nb__banners .nb__btext {
       display: none;
       padding: 20px 10px 40px 44px;
-      font-family: Arial;
+      line-height: 20px;
       font-size: 13px;
       color: #8a8a8a; }
 
 .logos {
-  width: 1160px;
-  margin: 0 auto;
   font-size: 0;
-  letter-spacing: 0;
   height: 150px;
   padding-top: 90px;
   text-align: center; }
@@ -379,12 +349,9 @@ table {
     width: 50px; }
 
 .links {
-  width: 1160px;
-  margin: 0 auto;
   height: 325px;
-  background: #2a2d32;
+  background-color: #2a2d32;
   font-size: 0;
-  letter-spacing: 0;
   text-align: center; }
   .links__item {
     display: inline-block;
@@ -393,7 +360,6 @@ table {
     text-align: left; }
     .links__item .links__header {
       padding: 60px 0 50px 10px;
-      font-family: "Ubuntu_condensedregular";
       font-size: 16px;
       color: white; }
     .links__item .links__list li {
@@ -403,7 +369,6 @@ table {
         border-top: none; }
       .links__item .links__list li a {
         line-height: 35px;
-        font-family: Arial;
         font-size: 13px;
         color: #8a8a8a; }
         .links__item .links__list li a:hover {
@@ -414,13 +379,10 @@ table {
     width: 40px; }
 
 .background-contacts {
-  background: #35383c;
-  width: 1160px;
-  margin: 0 auto; }
+  background-color: #35383c; }
 
 .contacts {
   line-height: 60px;
-  font-family: Arial;
   font-size: 13px;
   color: #8a8a8a; }
   .contacts__adress {

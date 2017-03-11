@@ -35,11 +35,11 @@ function getjson(word) {
 				}
 
 				var ideasTile = document.querySelector('.ideas__tile');
-				ideasTile.innerHTML = tmpl('ideas__tile__div', dataIdeasTile);
+				ideasTile.innerHTML = tmpl('ideas__dtile', dataIdeasTile);
 
 				var msnry = new Masonry(ideasTile, {
- 					itemSelector: ".ideas__tile__item",
-  					columnWidth: ".ideas__tile__item"
+ 					itemSelector: ".ideas__item",
+  					columnWidth: ".ideas__item"
 				});
 			};
 		};
@@ -49,10 +49,10 @@ function getjson(word) {
 
 getjson('holidays');
 
-document.querySelector('.search__form__button').onclick = function(e) {
-	var searchText = document.querySelector('.search__form__text').value;
+document.querySelector('.search__button').onclick = function(e) {
+	var searchText = document.querySelector('.search__text').value;
 	if (searchText) {
 		getjson(searchText);
 	}
-	document.querySelector('.search__form__text').value = '';
+	document.querySelector('.search__text').value = '';
 };

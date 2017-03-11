@@ -6,28 +6,28 @@ only screen and (min-device-pixel-ratio: 1.5) {
   	.promo {
     	background-image: url(../img/promo@2x.jpg);
   	}
-  	.howitworks__sliders__item{
-  		&__prev0, &__prev1, &__prev2,
-  		&__next0, &__next1, &__next2{
+  	.howitworks__item{
+  		.howitworks__prev0, .howitworks__prev1, .howitworks__prev2,
+  		.howitworks__next0, .howitworks__next1, .howitworks__next2{
   			background-image: url(../img/sprite@2x.png);
   			background-size: 152px;
   		}
  	}
-  	.partners__people__item__image{
-  		&__icon1, &__icon2, &__icon3, &__icon4{
+  	.partners__image{
+  		.partners__icon1, .partners__icon2, .partners__icon3, .partners__icon4{
   			background-image: url(../img/sprite@2x.png);
   			background-size: 152px;
   		}
-  		&__icon1{
+  		.partners__icon1{
   			background-position: -64px -26px;
 		}
-		&__icon2{
+		.partners__icon2{
   			background-position: -111px 0px;
 		}
-		&__icon3{
+		.partners__icon3{
   			background-position: 0px -83px;
 		}
-		&__icon4{
+		.partners__icon4{
   			background-position: -42px -83px;
 		}
   	}
@@ -41,40 +41,40 @@ only screen and (min-device-pixel-ratio: 1.5) {
 @media screen and (max-width: 769px){
 
 .promo{
-	&__header{
-		&__title,
-		&__spacing{
+	.promo__header{
+		.promo__title,
+		.promo__spacing{
 			display: none;
 		}
 	}
-	&__content{
-		&__title{
+	.promo__content{
+		.promo__ctitle{
 			display: block;
 		}
-		&__bigtext{
+		.promo__bigtext{
 			font-size: 30px;
 		}
-		&__smalltext{
+		.promo__smalltext{
 			padding: 20px 40px;
 			font-size: 18px;
 		}
 	}
 }
 .howitworks{
-	&__sliders{
-		&__item{
+	.howitworks__sliders{
+		.howitworks__item{
 			width: 100%;
 			height: 240px;
-			&__image{
+			.howitworks__image{
 				display: inline-block;
 			}
-			&__slides{
+			.howitworks__slides{
 				display: none;
 			}
-			&__prev0, &__prev1, &__prev2{
+			.howitworks__prev0, .howitworks__prev1, .howitworks__prev2{
 				display: none;
 			}
-			&__next0, &__next1, &__next2{
+			.howitworks__next0, .howitworks__next1, .howitworks__next2{
 				display: none;
 			}
 		}
@@ -82,11 +82,11 @@ only screen and (min-device-pixel-ratio: 1.5) {
 }	
 
 .ideas{
-	&__tile{
-		&__item{
+	.ideas__tile{
+		.ideas__item{
 			width: 100%;
 			height: 120px;
-			&__img{
+			.ideas__img{
 				min-height: 120px;
 			}
 		}
@@ -98,20 +98,20 @@ only screen and (min-device-pixel-ratio: 1.5) {
 
 .footer{
 	text-align: center;
-	&__title,
-	&__company{
+	.footer__title,
+	.footer__company{
 		width: 100%;
 		li{
 			display: inline-block;
 			padding-left: 5px;
 		}
 	}
-	&__logo{
+	.footer__logo{
 		position: relative;
 		top: 0;
 		right: 0;
 		width: 100%;
-		&__text{
+		.footer__text{
 			text-align: center;
 		}
 	}

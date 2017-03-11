@@ -1,10 +1,5 @@
 @import 'fonts';
 
-@mixin zero-spacing{
-	font-size: 0;
-	letter-spacing: 0;
-}
-
 $colorRed: #ff4e50;
 
 a{
@@ -17,7 +12,7 @@ a{
 	height: 700px;
 	background: url(../img/promo.jpg) no-repeat top grey;
 	background-size: 1440px 700px;
-	@include zero-spacing;
+	font-size: 0;
 	text-align: center;
 	font:{
 		family: 'montserrat';
@@ -27,7 +22,7 @@ a{
 	&__header{
 		height: 34px;
 		padding: 41px 0;
-		&__title{
+		.promo__title{
 			display: inline-block;
 			vertical-align: top;
 			padding-top: 8px;
@@ -35,16 +30,16 @@ a{
 			font-size: 20px;
 			letter-spacing: 1px;
 		}
-		&__spacing{
+		.promo__spacing{
 			display: inline-block;
 			vertical-align: top;
 			width: 44%;
 		}
-		&__login{
+		.promo__login{
 			display: inline-block;
 			vertical-align: top;
 			width: 173px;
-			&__button{
+			.promo__button{
 				display: inline-block;
 				vertical-align: top;
 				line-height: 34px;
@@ -65,16 +60,16 @@ a{
 		max-width: 500px;
 		margin: 102px auto;
 		letter-spacing: normal;
-		&__title{
+		.promo__ctitle{
 			display: none;
 			padding-bottom: 40px;
 			font-size: 20px;
 		}
-		&__bigtext{
+		.promo__bigtext{
 			font-size: 52px;
 			line-height: 62px;
 		}
-		&__smalltext{
+		.promo__smalltext{
 			padding: 24px 0;
 			font:{
 				family: 'roboto';
@@ -82,14 +77,14 @@ a{
 				size: 24px;
 			}
 		}
-		&__button{
+		.promo__cbutton{
 			display: inline-block;
 			vertical-align: top;
 			margin-top: 14px;
 			line-height: 38px;
 			padding: 0 22px;
 			border-radius: 17px;
-			background: $colorRed;
+			background-color: $colorRed;
 			color: white;
 			font-size: 14px;
 		}
@@ -112,9 +107,9 @@ a{
 	}
 	&__sliders{
 		color: white;
-		@include zero-spacing;
+		font-size: 0;
 		margin-bottom: 89px;
-		&__item{
+		.howitworks__item{
 			position: relative;
 			display: inline-block;
 			vertical-align: top;
@@ -125,12 +120,12 @@ a{
 			margin-bottom: 10px;
 			height: 400px;
 			overflow: hidden;
-			&__image{
+			.howitworks__image{
 				display: none;
 			}
-			&__slides{
+			.howitworks__slides{
 				position: relative;
-				&__slide0, &__slide1, &__slide2{
+				.howitworks__slide0, .howitworks__slide1, .howitworks__slide2{
 					height: 400px;
 					position: absolute;
 					top: 0;
@@ -144,7 +139,7 @@ a{
 					z-index: 2;
 				}
 			}
-			&__content{
+			.howitworks__content{
 				position: absolute;
 				bottom: 0;
 				left: 0;
@@ -152,26 +147,26 @@ a{
 				text-align: left;
 				margin: 17px 29px;
 				letter-spacing: normal;
-				&__step{
+				.howitworks__step{
 					display: inline-block;
 					vertical-align: top;
 					line-height: 20px;
 					padding: 0 13px;
 					margin-left: 3px;
 					border-radius: 10px;
-					background: $colorRed;
+					background-color: $colorRed;
 					font:{
 						weight: normal;
 						size: 10px;
 					}
 					letter-spacing: 2px;
 				}
-				&__bigtext{
+				.howitworks__bigtext{
 					padding: 15px 0 13px;
 					font-size: 24px;
 					line-height: 28px;
 				}
-				&__smalltext{
+				.howitworks__smalltext{
 					line-height: 16px;
 					font:{
 						family: 'roboto';
@@ -180,7 +175,7 @@ a{
 					}
 				}
 			}
-			&__prev0, &__prev1, &__prev2{
+			.howitworks__prev0, .howitworks__prev1, .howitworks__prev2{
 				position: absolute;
 				top: 154px;
 				left: 30px;
@@ -194,7 +189,7 @@ a{
   				background-position: -32px -26px;
 				cursor: pointer;
 			}
-			&__next0, &__next1, &__next2{
+			.howitworks__next0, .howitworks__next1, .howitworks__next2{
 				position: absolute;
 				top: 154px;
 				right: 30px;
@@ -216,25 +211,25 @@ a{
 	margin-bottom: 69px;
 	&__people{
 		color: black;
-		@include zero-spacing;
-		&__concat2{
+		font-size: 0;
+		.partners__concat2{
 			display: inline-block;
 			vertical-align: top;
-			&__spacing{
+			.partners__spacing{
 				display: inline-block;
 				vertical-align: top;
 				width: 30px;
 			}
 		}
-		&__item{
+		.partners__item{
 			display: inline-block;
 			vertical-align: top;
 			width: 210px;
 			margin-bottom: 32px;
 			letter-spacing: normal;
-			&__image{
+			.partners__image{
 				position: relative;
-				&__photo{
+				.partners__photo{
 					display: inline-block;
 					width: 130px;
 					height: 120px;
@@ -251,7 +246,7 @@ a{
 						margin: auto;
 					}
 				}
-				&__icon1, &__icon2, &__icon3, &__icon4{
+				.partners__icon1, .partners__icon2, .partners__icon3, .partners__icon4{
 					position: absolute;
 					bottom: -4px;
 					right: 0;
@@ -261,20 +256,20 @@ a{
 					background-repeat: no-repeat;
 					background-size: 153px;
 				}
-				&__icon1{
+				.partners__icon1{
   					background-position: 0px -83px;
 				}
-				&__icon2{
+				.partners__icon2{
   					background-position: -42px -83px;
 				}
-				&__icon3{
+				.partners__icon3{
   					background-position: -64px -26px;
 				}
-				&__icon4{
+				.partners__icon4{
   					background-position: -112px 0px;
 				}
 			}
-			&__bigtext{
+			.partners__bigtext{
 				margin: 20px 0 13px;
 				font:{
 					family: 'montserrat';
@@ -282,7 +277,7 @@ a{
 					size: 14px;
 				}
 			}
-			&__smalltext{
+			.partners__smalltext{
 				color: grey;
 				font:{
 					family: 'roboto';
@@ -292,7 +287,7 @@ a{
 				line-height: 18px;
 			}
 		}
-		&__spacing{
+		.partners__spacing2{
 			display: inline-block;
 			vertical-align: top;
 			width: 30px;
@@ -320,7 +315,7 @@ a{
 	margin: 0 auto;
 	text-align: center;
 	&__tile{
-		&__item{
+		.ideas__item{
 			width: 33%;
 			height: 310px;
 			box-sizing: border-box;
@@ -334,7 +329,7 @@ a{
 				height: 100%;
 				position: relative;	
 			}
-			&__img{
+			.ideas__img{
 				width: 100%;
 				min-height: 310px;
 				position: absolute;
@@ -344,7 +339,7 @@ a{
 				right: 0;
 				margin: auto;
 			}
-			&__text{
+			.ideas__text{
 				position: absolute;
 				top: 140px;
 				left: 0;
@@ -375,12 +370,13 @@ a{
 		
 	}
 	&__form{
-		&__text{
+		.search__text{
 			width: 222px;
 			height: 34px;
 			line-height: 34px;
 			padding-left: 14px;
 			margin: 40px 8px 0 0;
+			outline: none;
 			text-align: left;
 			color: grey;
 			font:{
@@ -389,13 +385,13 @@ a{
 				size: 14px;
 			}
 		}
-		&__button{
+		.search__button{
 			margin: 40px 0 99px;
 			line-height: 38px;
 			padding: 0 23px;
 			border-radius: 20px;
 			border: 1px solid $colorRed;
-			background: $colorRed;
+			background-color: $colorRed;
 			color: white;
 			font:{
 				family: 'montserrat';
@@ -413,7 +409,7 @@ a{
 }
 .strip{
 	height: 4px;
-	background: $colorRed;
+	background-color: $colorRed;
 }
 .footer{
 	width: 100%;
@@ -441,7 +437,7 @@ a{
 		width: 156px;
 		margin: -4px 0 20px;
 		line-height: 24px;
-		&__header{
+		.footer__header{
 			color: black;	
 			font:{
 				family: 'montserrat';
@@ -450,7 +446,7 @@ a{
 			}
 			margin-bottom: 5px;
 		}
-		&__item{
+		.footer__item{
 			line-height: 16px;
 			color: grey;
 			font:{
@@ -467,7 +463,7 @@ a{
 		top: 0;
 		right: 10px;
 		width: 110px;
-		&__text{
+		.footer__text{
 			margin-bottom: 10px;
 			text-align: right;
 			color: grey;
@@ -478,7 +474,7 @@ a{
 			}
 			letter-spacing: 0.9px;
 		}
-		&__image{
+		.footer__image{
 			display: inline-block;
 			vertical-align: top;
 			width: 110px;

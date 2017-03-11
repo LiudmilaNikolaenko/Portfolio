@@ -1,7 +1,7 @@
-@import "parametrs.less";
+@import "parametrs";
 
 body{
-	background: url(../img/bg_home.jpg) top no-repeat @colorbg;
+	background: url(../img/bg_home.jpg) bottom no-repeat @colorbg;
 	background-size: auto 100vh;
 }
 .home{
@@ -46,20 +46,4 @@ body{
 		}
 	}
 }
-.slcircles{
-	position: absolute;
-	bottom: 95vh / @rate;
-	right: 175vh / @rate;
-	&__item{
-		display: inline-block;
-		width: 14vh / @rate;
-		height: 14vh / @rate;
-		border-radius: 7vh / @rate;
-		border: 1px solid @colorgrey;
-		margin: 0 45vh / @rate;
-	}
-	&--activ{
-		border: 1px solid @colorblue;
-		background-color: @colorblue;
-	}
-}
+

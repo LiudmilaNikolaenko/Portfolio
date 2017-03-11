@@ -1,63 +1,67 @@
 @media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3 / 2), only screen and (min-device-pixel-ratio: 1.5) {
   .promo {
     background-image: url(../img/promo@2x.jpg); }
-  .howitworks__sliders__item__prev0, .howitworks__sliders__item__prev1, .howitworks__sliders__item__prev2, .howitworks__sliders__item__next0, .howitworks__sliders__item__next1, .howitworks__sliders__item__next2 {
+  .howitworks__item .howitworks__prev0, .howitworks__item .howitworks__prev1, .howitworks__item .howitworks__prev2,
+  .howitworks__item .howitworks__next0, .howitworks__item .howitworks__next1, .howitworks__item .howitworks__next2 {
     background-image: url(../img/sprite@2x.png);
     background-size: 152px; }
-  .partners__people__item__image__icon1, .partners__people__item__image__icon2, .partners__people__item__image__icon3, .partners__people__item__image__icon4 {
+  .partners__image .partners__icon1, .partners__image .partners__icon2, .partners__image .partners__icon3, .partners__image .partners__icon4 {
     background-image: url(../img/sprite@2x.png);
     background-size: 152px; }
-  .partners__people__item__image__icon1 {
+  .partners__image .partners__icon1 {
     background-position: -64px -26px; }
-  .partners__people__item__image__icon2 {
+  .partners__image .partners__icon2 {
     background-position: -111px 0px; }
-  .partners__people__item__image__icon3 {
+  .partners__image .partners__icon3 {
     background-position: 0px -83px; }
-  .partners__people__item__image__icon4 {
+  .partners__image .partners__icon4 {
     background-position: -42px -83px; }
   .footer__logo__image {
     background-image: url(../img/sprite@2x.png);
     background-size: 152px; } }
 
 @media screen and (max-width: 769px) {
-  .promo__header__title, .promo__header__spacing {
+  .promo .promo__header .promo__title,
+  .promo .promo__header .promo__spacing {
     display: none; }
-  .promo__content__title {
+  .promo .promo__content .promo__ctitle {
     display: block; }
-  .promo__content__bigtext {
+  .promo .promo__content .promo__bigtext {
     font-size: 30px; }
-  .promo__content__smalltext {
+  .promo .promo__content .promo__smalltext {
     padding: 20px 40px;
     font-size: 18px; }
-  .howitworks__sliders__item {
+  .howitworks .howitworks__sliders .howitworks__item {
     width: 100%;
     height: 240px; }
-    .howitworks__sliders__item__image {
+    .howitworks .howitworks__sliders .howitworks__item .howitworks__image {
       display: inline-block; }
-    .howitworks__sliders__item__slides {
+    .howitworks .howitworks__sliders .howitworks__item .howitworks__slides {
       display: none; }
-    .howitworks__sliders__item__prev0, .howitworks__sliders__item__prev1, .howitworks__sliders__item__prev2 {
+    .howitworks .howitworks__sliders .howitworks__item .howitworks__prev0, .howitworks .howitworks__sliders .howitworks__item .howitworks__prev1, .howitworks .howitworks__sliders .howitworks__item .howitworks__prev2 {
       display: none; }
-    .howitworks__sliders__item__next0, .howitworks__sliders__item__next1, .howitworks__sliders__item__next2 {
+    .howitworks .howitworks__sliders .howitworks__item .howitworks__next0, .howitworks .howitworks__sliders .howitworks__item .howitworks__next1, .howitworks .howitworks__sliders .howitworks__item .howitworks__next2 {
       display: none; }
-  .ideas__tile__item {
+  .ideas .ideas__tile .ideas__item {
     width: 100%;
     height: 120px; }
-    .ideas__tile__item__img {
+    .ideas .ideas__tile .ideas__item .ideas__img {
       min-height: 120px; }
-  .ideas__tile .widthx2 {
+  .ideas .ideas__tile .widthx2 {
     width: 100%; }
   .footer {
     text-align: center; }
-    .footer__title, .footer__company {
+    .footer .footer__title,
+    .footer .footer__company {
       width: 100%; }
-      .footer__title li, .footer__company li {
+      .footer .footer__title li,
+      .footer .footer__company li {
         display: inline-block;
         padding-left: 5px; }
-    .footer__logo {
+    .footer .footer__logo {
       position: relative;
       top: 0;
       right: 0;
       width: 100%; }
-      .footer__logo__text {
+      .footer .footer__logo .footer__text {
         text-align: center; } }
