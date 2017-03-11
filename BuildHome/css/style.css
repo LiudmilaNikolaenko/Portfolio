@@ -44,7 +44,7 @@ header {
     float: left;
     font-size: 0;
     letter-spacing: 0; }
-    .menu__side__item {
+    .menu__side .menu__item {
       display: inline-block;
       width: 120px;
       line-height: 56px;
@@ -53,20 +53,22 @@ header {
       font-family: "Ubuntu_condensedregular";
       font-size: 14px;
       letter-spacing: normal; }
-      .menu__side__item--active {
-        background: #248cec; }
-      .menu__side__item a {
+      .menu__side .menu__item a {
         color: white; }
-        .menu__side__item a:hover {
+        .menu__side .menu__item a:hover {
           color: #f4b60d; }
-  .menu__search {
+      .menu__side .menu__item--active {
+        background: #248cec; }
+        .menu__side .menu__item--active a:hover {
+          color: white; }
+  .menu .menu__search {
     float: right;
     width: 240px;
     font-size: 0;
     letter-spacing: 0;
     border: 1px solid #181a1d;
     margin: 8px; }
-    .menu__search__string {
+    .menu .menu__search .menu__string {
       display: inline-block;
       vertical-align: top;
       width: 190px;
@@ -78,8 +80,9 @@ header {
       text-align: left;
       background: #35383c;
       color: #8a8a8a;
-      border: none; }
-    .menu__search__botton {
+      border: none;
+      outline: none; }
+    .menu .menu__search .menu__botton {
       display: inline-block;
       vertical-align: top;
       width: 40px;
@@ -89,7 +92,8 @@ header {
       text-align: center;
       background: #35383c;
       color: #8a8a8a;
-      border: none; }
+      border: none;
+      outline: none; }
 
 table {
   border-collapse: collapse; }
@@ -141,6 +145,8 @@ table {
 .b123 {
   font-size: 0;
   letter-spacing: 0;
+  width: 1160px;
+  margin: 0 auto;
   text-align: center;
   height: 265px; }
   .b123__item {
@@ -148,7 +154,7 @@ table {
     vertical-align: top;
     text-align: left;
     width: 354px; }
-    .b123__item__number {
+    .b123__item .b123__number {
       display: inline-block;
       vertical-align: top;
       width: 120px;
@@ -156,34 +162,35 @@ table {
       font-size: 90px;
       color: #8a8a8a;
       opacity: 0.2; }
-    .b123__item__content {
+    .b123__item .b123__content {
       display: inline-block;
       vertical-align: top;
       width: 234px; }
-      .b123__item__content__icon {
+      .b123__item .b123__content .b123__icon {
         color: #f4b60d;
         font-size: 40px; }
-      .b123__item__content__header {
+      .b123__item .b123__content .b123__header {
         margin: 20px 0;
         font-family: "Ubuntu_condensedregular";
         font-size: 20px;
         color: #2a2d32; }
-      .b123__item__content__text {
+      .b123__item .b123__content .b123__text {
+        padding-right: 10px;
         margin-bottom: 20px;
         font-family: Arial;
         font-size: 13px;
         color: #8a8a8a;
         line-height: 20px; }
-      .b123__item__content__readmore {
+      .b123__item .b123__content .b123__readmore {
         font-family: "Ubuntu_condensedregular";
         font-size: 13px; }
-        .b123__item__content__readmore a {
+        .b123__item .b123__content .b123__readmore a {
           color: #2a2d32; }
-        .b123__item__content__readmore span {
+        .b123__item .b123__content .b123__readmore span {
           color: #248cec; }
-      .b123__item__content__readmore:hover a {
+      .b123__item .b123__content .b123__readmore:hover a {
         color: #248cec; }
-      .b123__item__content__readmore:hover span {
+      .b123__item .b123__content .b123__readmore:hover span {
         color: #8a8a8a; }
   .b123__spacing {
     display: inline-block;
@@ -191,16 +198,16 @@ table {
     width: 49px; }
 
 .background-services {
+  width: 1160px;
+  margin: 0 auto;
   height: 500px;
   background: #2a2d32; }
 
 .services {
-  width: 1160px;
-  margin: 0 auto;
   font-size: 0;
   letter-spacing: 0; }
   .services h2 {
-    padding: 50px 0 55px;
+    padding: 50px 0 55px 10px;
     font-family: "Ubuntu_condensedregular";
     font-size: 24px;
     color: white; }
@@ -237,6 +244,8 @@ table {
     width: 40px; }
 
 .nb {
+  width: 1160px;
+  margin: 0 auto;
   height: 540px;
   background: #f7f7f7;
   font-size: 0;
@@ -248,78 +257,78 @@ table {
     vertical-align: top;
     text-align: left; }
     .nb__side h2 {
-      padding: 60px 0 50px;
+      padding: 60px 0 50px 10px;
       font-family: "Ubuntu_condensedregular";
       font-size: 24px;
       color: #2a2d32; }
-    .nb__side__news__item {
+    .nb__side .nb__news .nb__item {
       margin-bottom: 30px; }
-      .nb__side__news__item__img {
+      .nb__side .nb__news .nb__item .nb__img {
         display: inline-block;
         vertical-align: top;
         position: relative;
         width: 150px; }
-        .nb__side__news__item__img__date {
+        .nb__side .nb__news .nb__item .nb__img .nb__date {
           position: absolute;
           top: 10px;
-          left: -15px;
+          left: 10px;
           width: 40px;
           line-height: 40px;
           font-family: "Ubuntu_condensedregular";
           text-align: center; }
-          .nb__side__news__item__img__date__month {
+          .nb__side .nb__news .nb__item .nb__img .nb__date .nb__month {
             background: #248cec;
             color: white;
             font-size: 15px; }
-          .nb__side__news__item__img__date__day {
+          .nb__side .nb__news .nb__item .nb__img .nb__date .nb__day {
             background: #f4b60d;
             color: #2a2d32;
             font-size: 18px; }
-      .nb__side__news__item__content {
+      .nb__side .nb__news .nb__item .nb__content {
         display: inline-block;
         vertical-align: top;
         margin-left: 30px;
         line-height: 20px;
         width: 380px; }
-        .nb__side__news__item__content__header {
+        .nb__side .nb__news .nb__item .nb__content .nb__header {
           font-family: "Ubuntu_condensedregular";
           font-size: 16px;
           color: #2a2d32; }
-          .nb__side__news__item__content__header:hover {
+          .nb__side .nb__news .nb__item .nb__content .nb__header:hover {
             color: #248cec; }
-        .nb__side__news__item__content__by {
+        .nb__side .nb__news .nb__item .nb__content .nb__by {
           padding-bottom: 20px;
           font-family: Arial;
           font-size: 13px;
           color: #2a2d32; }
-          .nb__side__news__item__content__by a {
+          .nb__side .nb__news .nb__item .nb__content .nb__by a {
             color: #248cec; }
-        .nb__side__news__item__content__text {
+        .nb__side .nb__news .nb__item .nb__content .nb__text {
           font-family: Arial;
           font-size: 13px;
           color: #8a8a8a; }
-    .nb__side__banners__item {
+    .nb__side .nb__banners .nb__bitem {
       margin-bottom: 5px;
       position: relative; }
-    .nb__side__banners__radio {
+    .nb__side .nb__banners .nb__radio {
       position: absolute;
       top: 11px;
       left: 9px;
       clip: rect(0, 0, 0, 0); }
-    .nb__side__banners__radio:checked + .nb__side__banners__botton:after {
+    .nb__side .nb__banners .nb__radio:checked + .nb__botton:after {
       content: "-";
       background: #f4b60d;
       border: 1px solid #f4b60d;
       color: white; }
-    .nb__side__banners__radio:checked + .nb__side__banners__botton + .nb__side__banners__pannel {
+    .nb__side .nb__banners .nb__radio:checked + .nb__botton + .nb__pannel {
       background: #f4b60d;
       border: 1px solid #f4b60d;
       color: white; }
-    .nb__side__banners__radio:checked + .nb__side__banners__botton + .nb__side__banners__pannel + .nb__side__banners__text {
+    .nb__side .nb__banners .nb__radio:checked + .nb__botton + .nb__pannel + .nb__btext {
       display: block; }
-    .nb__side__banners__botton {
+    .nb__side .nb__banners .nb__botton {
       display: inline-block; }
-    .nb__side__banners__botton:after {
+    .nb__side .nb__banners .nb__botton:after {
       content: "+";
       display: inline-block;
       vertical-align: top;
@@ -332,7 +341,7 @@ table {
       text-align: center;
       cursor: pointer;
       position: relative; }
-    .nb__side__banners__pannel {
+    .nb__side .nb__banners .nb__pannel {
       display: inline-block;
       vertical-align: top;
       width: 505px;
@@ -344,14 +353,16 @@ table {
       font-family: "Ubuntu_condensedregular";
       font-size: 13px;
       color: #2a2d32; }
-    .nb__side__banners__text {
+    .nb__side .nb__banners .nb__btext {
       display: none;
-      padding: 20px 0 40px 44px;
+      padding: 20px 10px 40px 44px;
       font-family: Arial;
       font-size: 13px;
       color: #8a8a8a; }
 
 .logos {
+  width: 1160px;
+  margin: 0 auto;
   font-size: 0;
   letter-spacing: 0;
   height: 150px;
@@ -360,12 +371,16 @@ table {
   .logos__img {
     display: inline-block;
     vertical-align: top; }
+    .logos__img:hover {
+      opacity: 0.7; }
   .logos__spacing {
     display: inline-block;
     vertical-align: top;
     width: 50px; }
 
 .links {
+  width: 1160px;
+  margin: 0 auto;
   height: 325px;
   background: #2a2d32;
   font-size: 0;
@@ -376,21 +391,22 @@ table {
     vertical-align: top;
     width: 260px;
     text-align: left; }
-    .links__item__header {
-      padding: 60px 0 50px;
+    .links__item .links__header {
+      padding: 60px 0 50px 10px;
       font-family: "Ubuntu_condensedregular";
       font-size: 16px;
       color: white; }
-    .links__item__list li {
-      border-top: 1px solid #8a8a8a; }
-      .links__item__list li:first-child {
+    .links__item .links__list li {
+      border-top: 1px solid #8a8a8a;
+      padding-left: 10px; }
+      .links__item .links__list li:first-child {
         border-top: none; }
-      .links__item__list li a {
+      .links__item .links__list li a {
         line-height: 35px;
         font-family: Arial;
         font-size: 13px;
         color: #8a8a8a; }
-        .links__item__list li a:hover {
+        .links__item .links__list li a:hover {
           color: #248cec; }
   .links__spacing {
     display: inline-block;
@@ -398,11 +414,11 @@ table {
     width: 40px; }
 
 .background-contacts {
-  background: #35383c; }
+  background: #35383c;
+  width: 1160px;
+  margin: 0 auto; }
 
 .contacts {
-  width: 1160px;
-  margin: 0 auto;
   line-height: 60px;
   font-family: Arial;
   font-size: 13px;
@@ -410,9 +426,13 @@ table {
   .contacts__adress {
     float: left;
     width: 650px; }
-    .contacts__adress__item {
-      padding-right: 30px; }
+    .contacts__adress .contacts__item {
+      padding-right: 30px;
+      padding-left: 10px; }
+      .contacts__adress .contacts__item a {
+        color: #8a8a8a; }
   .contacts__copywrite {
+    padding-right: 10px;
     float: right;
     width: 120px;
     text-align: right; }

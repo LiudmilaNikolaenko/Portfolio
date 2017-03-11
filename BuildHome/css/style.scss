@@ -48,7 +48,7 @@ header{
 		width: 605px;
 		float: left;
 		@include zero-spacing;
-		&__item{
+		.menu__item{
 			display: inline-block;
 			width: 120px;
 			line-height: 56px;
@@ -59,24 +59,27 @@ header{
 				size: 14px;
 			}
 			letter-spacing: normal;
-			&--active{
-				background: $color-blue;
-			}
 			a{
 				color: white;
 				&:hover{
 				color: $color-yellow;
 				}
 			}
+			&--active{
+				background: $color-blue;
+				a:hover{
+					color: white;
+				}
+			}
 		}
 	}
-	&__search{
+	.menu__search{
 		float: right;
 		width: 240px;
 		@include zero-spacing;
 		border: 1px solid #181a1d;
 		margin: 8px;
-		&__string{
+		.menu__string{
 			display: inline-block;
 			vertical-align: top;
 			width: 190px;
@@ -91,8 +94,9 @@ header{
 			background: $background-search;
 			color: $color-lightgrey;
 			border: none;
+			outline: none;
 		}
-		&__botton{
+		.menu__botton{
 			display: inline-block;
 			vertical-align: top;
 			width: 40px;
@@ -103,6 +107,7 @@ header{
 			background: $background-search;
 			color: $color-lightgrey;
 			border: none;
+			outline: none;
 		}
 	}
 }
@@ -165,6 +170,7 @@ table{
 }
 .b123{
 	@include zero-spacing;
+	@include wrapper;
 	text-align: center;
 	height: 265px;
 	&__item{
@@ -172,7 +178,7 @@ table{
 		vertical-align: top;
 		text-align: left;
 		width: 354px;
-		&__number{
+		.b123__number{
 			display: inline-block;
 			vertical-align: top;
 			width: 120px;
@@ -183,15 +189,15 @@ table{
 			color: $color-lightgrey;
 			opacity: 0.2;
 		}
-		&__content{
+		.b123__content{
 			display: inline-block;
 			vertical-align: top;
 			width: 234px;
-			&__icon{
+			.b123__icon{
 				color: $color-yellow;
 				font-size: 40px;
 			}
-			&__header{
+			.b123__header{
 				margin: 20px 0;
 				font:{
 					family: $font-ubuntu;
@@ -199,7 +205,8 @@ table{
 				}
 				color: $color-darkgrey;
 			}
-			&__text{
+			.b123__text{
+				padding-right: 10px;
 				margin-bottom: 20px;
 				font:{
 					family: Arial;
@@ -208,7 +215,7 @@ table{
 				color: $color-lightgrey;
 				line-height: 20px
 			}
-			&__readmore{
+			.b123__readmore{
 				font:{
 					family: $font-ubuntu;
 					size: 13px;
@@ -220,7 +227,7 @@ table{
     				color: $color-blue;
   				}
 			}
-			&__readmore:hover{
+			.b123__readmore:hover{
 				& a{
   					color: $color-blue;
   				}
@@ -237,14 +244,14 @@ table{
 	}
 }
 .background-services{
+	@include wrapper;
 	height: 500px;
 	background: #2a2d32;
 }
 .services{
-	@include wrapper;
 	@include zero-spacing;
 	h2{
-		padding: 50px 0 55px;
+		padding: 50px 0 55px 10px;
 		font:{
 			family: $font-ubuntu;
 			size: 24px;
@@ -294,6 +301,7 @@ table{
 	}
 }
 .nb{
+	@include wrapper;
 	height: 540px;
 	background: #f7f7f7;
 	@include zero-spacing;
@@ -304,48 +312,48 @@ table{
 		vertical-align: top;
 		text-align: left;
 		h2{
-			padding: 60px 0 50px;
+			padding: 60px 0 50px 10px;
 			font:{
 				family: $font-ubuntu;
 				size: 24px;
 			}
 			color: $color-darkgrey;
 		}
-		&__news{
-			&__item{
+		.nb__news{
+			.nb__item{
 				margin-bottom: 30px;
-				&__img{
+				.nb__img{
 					display: inline-block;
 					vertical-align: top;
 					position: relative;
 					width: 150px;
-					&__date{
+					.nb__date{
 						position: absolute;
 						top: 10px;
-						left: -15px;
+						left: 10px;
 						width: 40px;
 						line-height: 40px;
 						font-family: $font-ubuntu;
 						text-align: center;
-						&__month{
+						.nb__month{
 							background: $color-blue;
 							color: white;
 							font-size: 15px;
 						}
-						&__day{
+						.nb__day{
 							background: $color-yellow;
 							color: $color-darkgrey;
 							font-size: 18px;
 						}
 					}
 				}
-				&__content{
+				.nb__content{
 					display: inline-block;
 					vertical-align: top;
 					margin-left: 30px;
 					line-height: 20px;
 					width: 380px;
-					&__header{
+					.nb__header{
 						font:{
 							family: $font-ubuntu;
 							size: 16px;
@@ -355,7 +363,7 @@ table{
 							color: $color-blue;
 						}
 					}
-					&__by{
+					.nb__by{
 						padding-bottom: 20px;
 						font:{
 							family: Arial;
@@ -366,7 +374,7 @@ table{
 							color: $color-blue;
 						}
 					}
-					&__text{
+					.nb__text{
 						font:{
 							family: Arial;
 							size: 13px;
@@ -376,35 +384,35 @@ table{
 				}
 			}
 		}
-		&__banners{
-			&__item{
+		.nb__banners{
+			.nb__bitem{
 				margin-bottom: 5px;
 				position: relative;
 			}
-			&__radio{
+			.nb__radio{
 				position: absolute;
 				top: 11px;
 				left: 9px;
     			clip: rect(0, 0, 0, 0);
 			}
-			&__radio:checked + &__botton:after{
+			.nb__radio:checked + .nb__botton:after{
 				content: "-";
 				background: $color-yellow;
 				border: 1px solid $color-yellow;
 				color: white;
 			}
-			&__radio:checked + &__botton + &__pannel{
+			.nb__radio:checked + .nb__botton + .nb__pannel{
 				background: $color-yellow;
 				border: 1px solid $color-yellow;
 				color: white;
 			}
-			&__radio:checked + &__botton + &__pannel + &__text{
+			.nb__radio:checked + .nb__botton + .nb__pannel + .nb__btext{
 				display: block;
 			}
-			&__botton{
+			.nb__botton{
 				display: inline-block;
 			}
-			&__botton:after{
+			.nb__botton:after{
 				content: "+";
 				display: inline-block;
 				vertical-align: top;
@@ -418,7 +426,7 @@ table{
 				cursor: pointer;
 				position: relative;
 			}
-			&__pannel{
+			.nb__pannel{
 				display: inline-block;
 				vertical-align: top;
 				width: 505px;
@@ -433,9 +441,9 @@ table{
 				}
 				color: $color-darkgrey;
 			}
-			&__text{
+			.nb__btext{
 				display: none;
-				padding: 20px 0 40px 44px;
+				padding: 20px 10px 40px 44px;
 				font:{
 					family: Arial;
 					size: 13px;
@@ -446,6 +454,7 @@ table{
 	}
 }
 .logos{
+	@include wrapper;
 	@include zero-spacing;
 	height: 150px;
 	padding-top: 90px;
@@ -453,6 +462,9 @@ table{
 	&__img{
 		display: inline-block;
 		vertical-align: top;
+		&:hover{
+			opacity: 0.7;
+		}
 	}
 	&__spacing{
 		display: inline-block;
@@ -461,6 +473,7 @@ table{
 	}
 }
 .links{
+	@include wrapper;
 	height: 325px;
 	background: #2a2d32;
 	@include zero-spacing;
@@ -470,17 +483,18 @@ table{
 		vertical-align: top;
 		width: 260px;
 		text-align: left;
-		&__header{
-			padding: 60px 0 50px;
+		.links__header{
+			padding: 60px 0 50px 10px;
 			font:{
 				family: $font-ubuntu;
 				size: 16px;
 			}
 			color: white;
 		}
-		&__list{
+		.links__list{
 			li{
 				border-top: 1px solid $color-lightgrey;
+				padding-left: 10px;
 				&:first-child{
 					border-top: none;
 				}
@@ -506,9 +520,9 @@ table{
 }
 .background-contacts{
 	background: $background-contacts;
+	@include wrapper;
 }
 .contacts{
-	@include wrapper;
 	line-height: 60px;
 	font:{
 		family: Arial;
@@ -518,11 +532,16 @@ table{
 	&__adress{
 		float: left;
 		width: 650px;
-		&__item{
+		.contacts__item{
 			padding-right: 30px;
+			padding-left: 10px;
+			a{
+				color: $color-lightgrey;
+			}
 		}
 	}
 	&__copywrite{
+		padding-right: 10px;
 		float: right;
 		width: 120px;
 		text-align: right;
